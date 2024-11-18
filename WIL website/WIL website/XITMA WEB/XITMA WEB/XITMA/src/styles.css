@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding-top: 80px;
+}
+
+header {
+  background-color: #22313f;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+header nav ul a:hover {
+  background-color: #1b2a34;
+  border-radius: 5px;
+}
+
+.homepage {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.homepage h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.homepage div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.welcome1 {
+  color: #fed525;
+  font-weight: 1000;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.7;
+}
+
+/* Footer styling */
+footer {
+  background-color: #22313f;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .copying1 {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+footer .copying1 .c1 {
+  display: flex;
+  float: left;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer .copying1 .c2 {
+  display: flex;
+  float: right;
+  color: #ffffff;
+  font-size: 20px;
+}
+footer .copying1 a {
+  font-size: 20px;
+  font-family: monospace;
+  text-decoration: none;
+  color: #080826;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header nav ul a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .homepage h1 {
+    font-size: 28px;
+  }
+  .aboutpage h2 {
+    font-size: 28px;
+  }
+  .gallery h2 {
+    font-size: 28px;
+  }
+  .contact-section {
+    font-size: 28px;
+  }
+  .team {
+    font-size: 28px;
+  }
+  .services {
+    font-size: 28px;
+  }
+  .contain {
+    font-size: 28px;
+  }
+}
+
+/*ABOUT PAGE*/
+.aboutpage {
+  margin: 70px;
+  background-color: #ececec;
+}
+
+.aboutpage h1 {
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtopic {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.since {
+  color: #fed525;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.about-images img {
+  width: 30%;
+  height: auto;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/*OUR GALLERY*/
+
+.gallery {
+  margin: 70px;
+  background-color: #ececec;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.gallery-images img {
+  width: 30%;
+  height: auto;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.gallery h2 {
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery p {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+/*CONTACT US*/
+.contact-section {
+  margin: 70px;
+  background-color: #ececec;
+  padding: 40px;
+  max-width: 800px;
+  margin-left: 240px;
+}
+
+.contact-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: #fed525;
+  margin: 10px 0 20px 0;
+  border: none;
+  opacity: 0.8;
+}
+
+.contact-details p,
+.business-hours p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.contact-details strong,
+.business-hours strong {
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.contact-section .business-hours {
+  margin-top: 50px;
+}
+
+.contact-section .business-hours p {
+  margin-top: 30px;
+}
+
+/*OUR TEAM*/
+
+.team {
+  margin: 70px;
+  background-color: #ececec;
+}
+
+.team h1 {
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.team p {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.team-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.team-images img {
+  width: 30%;
+  height: auto;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+/*SERVICES*/
+.services {
+  margin: 70px;
+  background-color: #ececec;
+}
+
+.services h1 {
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.services p {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.mage-container {
+  position: relative;
+  background-color: #080826;
+  color: white;
+  overflow: hidden;
+}
+
+.mage-container img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.mage-container .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*jhgfdfghuioiuyhg*/
+.contain {
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+}
+.service-sect {
+  display: flex;
+  margin-bottom: 30px;
+  background-color: #080826;
+
+  color: white;
+  padding: 20px;
+}
+.service-tex {
+  width: 50%;
+  padding-right: 20px;
+}
+.service-tex h2 {
+  color: yellow;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.service-tex p,
+.service-text ul {
+  font-size: 16px;
+}
+.serv-image {
+  width: 50%;
+}
+.serv-image img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin-bottom: 10px;
+}
+ul li::before {
+  content: "➔ ";
+  color: yellow;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contant Us</title>
+
+    <!--LINK EXTERNAL CSS FILE-->
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/campus logo.png" alt=""
+      /></a>
+      <nav>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="Disaster Recovery.html">Disaster Recovery</a>
+          <a href="IT Staff Strucure.html">IT Staff Structure</a>
+          <a href="SOP.html">SOP</a>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <h1></h1>
+     <h2>STANDARD OPERATING PROCEDURE</h2>
+      <p class="paragraph"><strong>IT SECURITY POLICY GUIDELINES & OUTLINE SERVICE</strong></p>
+      <ul class="paragraph">
+        To develop a campus network infrastructure for the college, 
+        we must consider connection,
+         security, and equipment deployment across three buildings. 
+        Here's a thorough method that 
+        considers a variety of important factors, 
+        including network topology and equipment selection, as well as
+         security and maintenance practices.
+        <li>
+          <strong>User Authentication:</strong> Each user must authenticate with their unique credentials
+           for both wired and wireless access.
+        </li>
+        <li>
+          <strong>Device Management:</strong> All devices must be registered 
+          with the IT department,
+           and unauthorized devices should be automatically blocked..
+        </li>
+        <li>
+          <strong>Software and Firmware Updates: </strong>Regular updates for 
+          all networking equipment
+           (e.g., firewall, routers, and switches
+        </li>
+        <li>
+          <strong>Incident Response:</strong> Define a 
+          response plan for breaches, including 
+          isolation of affected devices and incident reporting protocols.
+        </li>
+        <li>
+          <strong>Data Security:</strong> : Enforce 
+          encryptions for all internal
+           communications and sensitive data storage.
+        </li>
+        <strong>Network design and topology</strong>
+        
+        <li>
+          <strong>Network Topology:</strong> The star topology is
+           useful for linking several building
+          s to a single network point (main building), which houses the 
+          principal internet                        
+          connection. Due to the distances involved, 
+          we will connect buildings via fibre optic cables, 
+          assuring minimal latency and high-speed connectivity.
+        </li>
+        <li>                                          
+          <strong>Wifi Coverage</strong> Install Wi-Fi access points in each building's                                                                 
+          lobby to ensure wireless access within a 200 square meter area.
+        </li>
+        <li>
+          <strong>Wired Network</strong> Because each user has a device, we will install 
+          structured cabling throughout each facility. Each building will have its 
+          own local network, which is administered by a switch and connected to the main network via fibre optic cables.
+          <p class="paragraph"><strong>IP address Schema and Management</strong></p>
+              <li><strong> Using a private IP range</strong></li>Using a private IP range:
+        	    Subnetting: We'll partition the IP address range into subnets depending on building groupings.
+              Main building (30 users + 3 printers): 192.168.1.0/26 (maximum of 62 addresses)
+             Building 1 (30 users + 3 printers): 192.168.1.64/26 (max. 62 addresses)   
+               Building  2 (40 users + 3 printers): 192.168.1.128/26 (max. 62 addresses)
+              Each network device will be assigned a unique IP address, and DHCP servers will be deployed in each 
+              subnet to dynamically control IP address allocation. In addition, a DHCP server will be installed in the main building.
+
+
+      
+    </section>
+
+    <footer>
+      <div class="copying1">
+        <p class="c1">&deg; Copyright Reserved</p>
+        <div class="c2">
+          <p>@2024 | Campus Network</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
